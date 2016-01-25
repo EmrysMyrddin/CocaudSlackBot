@@ -4,6 +4,7 @@
   "description": "CocaudBot",
   "scripts": {
     "build": "node -use_strict ./build.js",
+    "installDatabase" : "node -use_strict ./installDatabase.js",
     "bot": "node -use_strict ./dist/bot.js"
   },
   "author": "Valentin Cocaud <v.cocaud@gmail.com> (http://www.cocaud.com/)",

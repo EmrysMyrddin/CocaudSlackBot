@@ -11,6 +11,7 @@ nécéssaire en se basant sur le fichier `properties_sample.json`.
 
     $ git clone https://github.com/EmrysMyrddin/CocaudSlackBot.git && cd CocaudSlackBot
     $ npm install
+    $ npm run installDatabase // Will create appropriate tables in the database 
     $ npm run bot
     
 Votre bot est désormais en ligne sur votre team slack. Pour qu'il commence a réagoir et compter les

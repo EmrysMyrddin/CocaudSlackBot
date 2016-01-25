@@ -8,7 +8,7 @@ import Interpreteur from "./interpreteur.js";
 import {log, beginWith, endWith} from "./utils.js";
 
 // Error handling of unhandled promise rejections
-process.on('unhandledRejection', err => {console.error(err); console.error(err.stack);});
+process.on('unhandledRejection', err => {console.error(err.message); console.error(err.stack);});
 
 var db = new DataBase();
 var slack = new Slack();
@@ -17,7 +17,7 @@ var interpreteur = new Interpreteur(slack, db);
 log("Setting up event listeners");
 
 slack.on([
-	["open", event => {
+	["open", () => {
 		log("Bot connected.");
 	}],
 	["raw_message", event => {
