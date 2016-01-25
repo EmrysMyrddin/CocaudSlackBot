@@ -11,5 +11,11 @@
     "user" : "",
     "password" : "",
     "database" : ""
+  },
+  "bot" :
+  {
+    "reactions" : [
+      "cocaud"
+    ]
   }
 }

@@ -5,6 +5,7 @@
 import DataBase from "./DataBase.js";
 import {Slack} from "./Slack.js";
 import Interpreteur from "./interpreteur.js";
+import properties from "../properties.json";
 import {log, beginWith, endWith} from "./utils.js";
 
 // Error handling of unhandled promise rejections
@@ -24,6 +25,14 @@ slack.on([
 		if(!beginWith(event.type, "reaction_")) return; //L'event concerne les réactions
 		if(event.item.type !== "message") return; // La réaction concerne un message
 		if(!endWith(event.type, "added") && !endWith(event.type, "removed")) return; // Il s'agit d'un ajout ou d'une supression
+
+		// Est-ce que la réaction fait parti des réactions qui doivent être réconnues
+		let reactionRecognized = false;
+		for(let r of properties.bot.reactions) {
+			reactionRecognized = reactionRecognized || (r === event.reaction);
+			console.log(reactionRecognized, r, event.reaction);
+		}
+		if(!reactionRecognized) return;
 
 		console.log("Bot : reaction interaction");
 		let user_id;
