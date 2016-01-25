@@ -1,0 +1,15 @@
+{
+  "slack" :
+  {
+    "token" : "",
+    "autoReconnect" : true,
+    "autoMark" : true
+  },
+  "database" :
+  {
+    "host" : "localhost",
+    "user" : "",
+    "password" : "",
+    "database" : ""
+  }
+}

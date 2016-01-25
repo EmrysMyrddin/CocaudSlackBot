@@ -1,0 +1,23 @@
+/**
+ * Created by valentin on 22/01/16.
+ */
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.
+
+log = log;exports.
+
+
+
+
+beginWith = beginWith;exports.
+
+
+
+
+
+
+endWith = endWith;function log() {var _console;return (_console = console).log.apply(_console, arguments);}function beginWith(string, patern) {if (!patern) return true;if (!string) return false;return string.substr(0, patern.length) === patern;}function endWith(string, patern) 
+{
+	if (!patern) return true;
+	if (!string) return false;
+	return string.substr(string.length - patern.length, string.length) === patern;}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInV0aWxzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUdBOztBQUVnQjs7Ozs7QUFLQTs7Ozs7OztBQU9BLGtCQVpULFNBQVMsR0FBVCxHQUNQLGNBQ0MsT0FBTyxxQkFBUSxHQUFSLDJCQUFQLENBREQsQ0FETyxTQUtTLFNBQVQsQ0FBbUIsTUFBbkIsRUFBMkIsTUFBM0IsRUFDUCxDQUNDLElBQUcsQ0FBQyxNQUFELEVBQVMsT0FBTyxJQUFQLENBQVosSUFDRyxDQUFDLE1BQUQsRUFBUyxPQUFPLEtBQVAsQ0FBWixPQUNPLE9BQU8sTUFBUCxDQUFjLENBQWQsRUFBaUIsT0FBTyxNQUFQLENBQWpCLEtBQW9DLE1BQXBDLENBSFIsQ0FETyxTQU9TLE9BQVQsQ0FBaUIsTUFBakIsRUFBeUIsTUFBekI7QUFDUDtBQUNDLEtBQUcsQ0FBQyxNQUFELEVBQVMsT0FBTyxJQUFQLENBQVo7QUFDQSxLQUFHLENBQUMsTUFBRCxFQUFTLE9BQU8sS0FBUCxDQUFaO0FBQ0EsUUFBTyxPQUFPLE1BQVAsQ0FBYyxPQUFPLE1BQVAsR0FBZ0IsT0FBTyxNQUFQLEVBQWUsT0FBTyxNQUFQLENBQTdDLEtBQWdFLE1BQWhFLENBSFIsQ0FETyIsImZpbGUiOiJ1dGlscy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ3JlYXRlZCBieSB2YWxlbnRpbiBvbiAyMi8wMS8xNi5cbiAqL1xuXCJ1c2Ugc3RyaWN0XCI7XG5cbmV4cG9ydCBmdW5jdGlvbiBsb2coLi4ucGFyYW1zKVxue1xuXHRyZXR1cm4gY29uc29sZS5sb2coLi4ucGFyYW1zKTtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIGJlZ2luV2l0aChzdHJpbmcsIHBhdGVybilcbntcblx0aWYoIXBhdGVybikgcmV0dXJuIHRydWU7XG5cdGlmKCFzdHJpbmcpIHJldHVybiBmYWxzZTtcblx0cmV0dXJuIHN0cmluZy5zdWJzdHIoMCwgcGF0ZXJuLmxlbmd0aCkgPT09IHBhdGVybjtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIGVuZFdpdGgoc3RyaW5nLCBwYXRlcm4pXG57XG5cdGlmKCFwYXRlcm4pIHJldHVybiB0cnVlO1xuXHRpZighc3RyaW5nKSByZXR1cm4gZmFsc2U7XG5cdHJldHVybiBzdHJpbmcuc3Vic3RyKHN0cmluZy5sZW5ndGggLSBwYXRlcm4ubGVuZ3RoLCBzdHJpbmcubGVuZ3RoKSA9PT0gcGF0ZXJuO1xufSJdfQ==
