@@ -9,7 +9,7 @@ qu'un utilisateur reçois (parmis les réaction prsente dans le fichier de confi
 Créer un fichier `properties.json` contenant la configuration
 nécéssaire en se basant sur le fichier `properties_sample.json`.
 
-    $ git clone https://github.com/EmrysMyrddin/CocaudSlackBot.git
+    $ git clone https://github.com/EmrysMyrddin/CocaudSlackBot.git && cd CocaudSlackBot
     $ npm install
     $ npm run bot
     
